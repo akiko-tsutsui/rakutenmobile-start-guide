@@ -90,93 +90,41 @@
                 </a>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+           <!-- Main Promo Buttons (Unified Design) -->
+            <div class="grid grid-cols-1 gap-4 mb-8">
     
                 <!-- Comparison Card -->
-                <div onclick="showPage('compare')" class="bg-white p-5 rounded-2xl border-2 border-yellow-400 card-shadow cursor-pointer hover:bg-yellow-50 transition-colors sm:col-span-2">
+                <div onclick="showPage('compare')" class="promo-card bg-yellow-50 border-yellow-400 card-shadow">
                     <div class="flex items-center gap-4">
-                        <div class="bg-yellow-400 text-white w-12 h-12 rounded-full flex items-center justify-center shrink-0">
-                            <i class="fas fa-scale-balanced text-xl"></i>
+                        <div class="bg-white p-2 rounded-full shadow-sm float-icon flex items-center justify-center w-12 h-12">
+                            <i class="fas fa-scale-balanced text-yellow-500 text-xl"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-[#e6006e]">【まず比較！】3大キャリアとの料金差</h3>
-                            <p class="text-xs text-gray-500">どれくらい安くなるか一目でチェック</p>
+                            <span class="block text-[10px] text-yellow-600 font-bold leading-none mb-1">おトクを即チェック</span>
+                            <span class="text-sm font-black text-gray-800">【まず比較！】3大キャリアとの料金差</span>
                         </div>
-                        <i class="fas fa-chevron-right ml-auto text-gray-300"></i>
                     </div>
+                    <i class="fas fa-chevron-right text-yellow-300 text-sm"></i>
                 </div>
 
-                <!-- Page: Campaign Details -->
-    <div id="page-campaign" class="page-content">
-        <div class="bg-white p-6 border-b">
-            <button onclick="showPage('top')" class="text-pink-500 text-sm mb-2 inline-flex items-center gap-1">
-                <i class="fas fa-chevron-left"></i> 戻る
-            </button>
-            <h2 class="text-2xl font-bold text-[#e6006e]">紹介キャンペーン詳細</h2>
-        </div>
-
-        <main class="p-6 max-w-2xl mx-auto space-y-6">
-            <div class="bg-[#fdf2f7] border-l-4 border-[#e6006e] p-4 rounded-r-xl shadow-sm">
-                <p class="text-sm font-black text-[#e6006e] leading-snug">
-                    お乗り換えで14,000ポイント、<br>新規ご契約で11,000ポイントプレゼント！
-                </p>
-            </div>
-
-            <a href="https://r10.to/h83Em3?openExternalBrowser=1" target="_blank" class="block w-full bg-[#e6006e] text-white text-center py-4 rounded-2xl font-black text-sm shadow-lg hover:opacity-90 transition-opacity active:scale-[0.98]">
-                ▼ キャンペーンのエントリーはこちら
-            </a>
-
-            <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
-                <h3 class="text-sm font-black text-gray-800 mb-6 flex items-center gap-2">
-                    <span class="bg-pink-500 text-white px-2 py-0.5 rounded text-[10px]">CHECK</span>
-                    キャンペーンエントリー方法
-                </h3>
-                
-                <div class="space-y-6 relative">
-                    <div class="flex gap-4 relative">
-                        <div class="flex-shrink-0 w-7 h-7 bg-pink-500 text-white rounded-full flex items-center justify-center text-sm font-bold z-10 shadow-sm">1</div>
-                        <div class="pt-0.5">
-                            <p class="text-sm font-bold text-gray-700 leading-snug">楽天IDでログインしてエントリー完了</p>
+                <!-- Campaign Promo Card -->
+                <div onclick="showPage('campaign')" class="promo-card bg-pink-50 border-pink-200 card-shadow">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-white p-2 rounded-full shadow-sm float-icon flex items-center justify-center w-12 h-12">
+                            <i class="fas fa-gift text-pink-500 text-xl"></i>
                         </div>
-                        <div class="absolute left-[13px] top-7 w-[2px] h-8 bg-pink-50"></div>
-                    </div>
-                    <div class="flex gap-4 relative">
-                        <div class="flex-shrink-0 w-7 h-7 bg-pink-500 text-white rounded-full flex items-center justify-center text-sm font-bold z-10 shadow-sm">2</div>
-                        <div class="pt-0.5">
-                            <p class="text-sm font-bold text-gray-700 leading-snug">紹介キャンペーンページに遷移します</p>
-                        </div>
-                        <div class="absolute left-[13px] top-7 w-[2px] h-8 bg-pink-50"></div>
-                    </div>
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0 w-7 h-7 bg-pink-500 text-white rounded-full flex items-center justify-center text-sm font-bold z-10 shadow-sm">3</div>
-                        <div class="pt-0.5">
-                            <p class="text-sm font-bold text-gray-700 leading-relaxed">
-                                エントリー完了後は、サイトからのオンライン契約、楽天モバイルショップでの店頭契約のいずれも適用対象になります。
-                            </p>
+                        <div>
+                            <span class="block text-[10px] text-pink-500 font-bold leading-none mb-1">期間限定キャンペーン実施中</span>
+                            <span class="text-sm font-black text-gray-800">紹介キャンペーンの詳細を確認する</span>
                         </div>
                     </div>
+                    <i class="fas fa-chevron-right text-pink-300 text-sm"></i>
                 </div>
+
             </div>
-            
-            <div class="text-center pt-4">
-                <button onclick="showPage('top')" class="text-gray-400 text-xs hover:underline">トップページに戻る</button>
-            </div>
-        </main>
-    </div>
 
-    <script>
-        function showCampaignPage() {
-            document.getElementById('top-page').classList.remove('active');
-            document.getElementById('campaign-page').classList.add('active');
-            window.scrollTo(0, 0);
-        }
 
-        function showTopPage() {
-            document.getElementById('campaign-page').classList.remove('active');
-            document.getElementById('top-page').classList.add('active');
-        }
-    </script>
-
+ <!-- Guide Cards Grid -->
 
                 <div onclick="showPage('p1')" class="bg-white p-5 rounded-2xl border border-pink-50 card-shadow cursor-pointer hover:bg-pink-50 transition-colors">
                     <div class="flex items-center gap-4">
@@ -237,6 +185,64 @@
         </main>
     </div>
 
+    <!-- Page: Campaign Details -->
+    <div id="page-campaign" class="page-content">
+        <div class="bg-white p-6 border-b">
+            <button onclick="showPage('top')" class="text-pink-500 text-sm mb-2 inline-flex items-center gap-1">
+                <i class="fas fa-chevron-left"></i> 戻る
+            </button>
+            <h2 class="text-2xl font-bold text-[#e6006e]">紹介キャンペーン詳細</h2>
+        </div>
+
+        <main class="p-6 max-w-2xl mx-auto space-y-6">
+            <div class="bg-[#fdf2f7] border-l-4 border-[#e6006e] p-4 rounded-r-xl shadow-sm">
+                <p class="text-sm font-black text-[#e6006e] leading-snug">
+                    お乗り換えで14,000ポイント、<br>新規ご契約で11,000ポイントプレゼント！
+                </p>
+            </div>
+
+            <a href="https://r10.to/h83Em3?openExternalBrowser=1" target="_blank" class="block w-full bg-[#e6006e] text-white text-center py-4 rounded-2xl font-black text-sm shadow-lg hover:opacity-90 transition-opacity active:scale-[0.98]">
+                ▼ キャンペーンのエントリーはこちら
+            </a>
+
+            <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
+                <h3 class="text-sm font-black text-gray-800 mb-6 flex items-center gap-2">
+                    <span class="bg-pink-500 text-white px-2 py-0.5 rounded text-[10px]">CHECK</span>
+                    キャンペーンエントリー方法
+                </h3>
+                
+                <div class="space-y-6 relative">
+                    <div class="flex gap-4 relative">
+                        <div class="flex-shrink-0 w-7 h-7 bg-pink-500 text-white rounded-full flex items-center justify-center text-sm font-bold z-10 shadow-sm">1</div>
+                        <div class="pt-0.5">
+                            <p class="text-sm font-bold text-gray-700 leading-snug">楽天IDでログインしてエントリー完了</p>
+                        </div>
+                        <div class="absolute left-[13px] top-7 w-[2px] h-8 bg-pink-50"></div>
+                    </div>
+                    <div class="flex gap-4 relative">
+                        <div class="flex-shrink-0 w-7 h-7 bg-pink-500 text-white rounded-full flex items-center justify-center text-sm font-bold z-10 shadow-sm">2</div>
+                        <div class="pt-0.5">
+                            <p class="text-sm font-bold text-gray-700 leading-snug">紹介キャンペーンページに遷移します</p>
+                        </div>
+                        <div class="absolute left-[13px] top-7 w-[2px] h-8 bg-pink-50"></div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-7 h-7 bg-pink-500 text-white rounded-full flex items-center justify-center text-sm font-bold z-10 shadow-sm">3</div>
+                        <div class="pt-0.5">
+                            <p class="text-sm font-bold text-gray-700 leading-relaxed">
+                                エントリー完了後は、サイトからのオンライン契約、楽天モバイルショップでの店頭契約のいずれも適用対象になります。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center pt-4">
+                <button onclick="showPage('top')" class="text-gray-400 text-xs hover:underline">トップページに戻る</button>
+            </div>
+        </main>
+    </div>
+    
     <!-- Comparison Table Component -->
     <template id="comparison-table">
         <section class="mb-10 px-2">
@@ -736,6 +742,7 @@
     </script>
 </body>
 </html>
+
 
 
 
