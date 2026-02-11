@@ -19,7 +19,7 @@
             background: linear-gradient(135deg, #e6006e 0%, #ff4eb0 100%);
         }
         .card-shadow {
-            box-shadow: 0 4px 20px rgba(230, 0, 110, 0.08);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
         .page-content {
             display: none;
@@ -45,14 +45,33 @@
             font-weight: bold;
             margin-right: 8px;
         }
-        .referral-float {
+        .float-icon {
             animation: bounce 2s infinite;
         }
         @keyframes bounce {
             0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-5px); }
+            50% { transform: translateY(-3px); }
         }
 
+        /* 共通ボタン（カード）スタイル */
+        .promo-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.25rem;
+            border-radius: 1.25rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            height: 6rem; /* 高さを統一 */
+            border-width: 2px;
+        }
+        .promo-card:hover {
+            transform: translateY(-2px);
+        }
+        .promo-card:active {
+            transform: translateY(0);
+            opacity: 0.9;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -62,7 +81,7 @@
         <div class="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
             <div class="flex items-center gap-2 cursor-pointer" onclick="showPage('top')">
                 <div class="w-8 h-8 bg-[#e6006e] rounded-full flex items-center justify-center text-white">
-                    <i class="fas fa-rocket"></i>
+                    <i class="fas fa-rocket text-sm"></i>
                 </div>
                 <span class="font-bold text-lg tracking-tight">ラク得！楽天モバイルスタートガイド</span>
             </div>
@@ -82,15 +101,15 @@
         <main class="max-w-4xl mx-auto px-4 py-8">
             <h2 class="text-center font-bold text-gray-800 mb-6">気になる項目を選んでください</h2>
             
-            <!-- 追加されたボタンエリア -->
-            <div class="grid grid-cols-1 sm:grid-cols-1 gap-3 mb-8">
+            <!-- Connection Check -->
+            <div class="mb-8">
                 <a href="https://network.mobile.rakuten.co.jp/area/?l-id=top_area-top_tokyo_pitari&s-id=top_area-top_tokyo_all" target="_blank" class="flex items-center justify-center gap-2 bg-white border-2 border-blue-400 text-blue-600 py-3 rounded-xl font-bold text-sm shadow-sm hover:bg-blue-50 transition-colors">
                     <i class="fas fa-map-marker-alt"></i>
                     お家や職場でつながるかをチェック！
                 </a>
             </div>
 
-           <!-- Main Promo Buttons (Unified Design) -->
+            <!-- Main Promo Buttons (Unified Design) -->
             <div class="grid grid-cols-1 gap-4 mb-8">
     
                 <!-- Comparison Card -->
@@ -123,9 +142,8 @@
 
             </div>
 
-
- <!-- Guide Cards Grid -->
-
+            <!-- Guide Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div onclick="showPage('p1')" class="bg-white p-5 rounded-2xl border border-pink-50 card-shadow cursor-pointer hover:bg-pink-50 transition-colors">
                     <div class="flex items-center gap-4">
                         <i class="fas fa-right-left text-3xl text-[#e6006e] w-12 text-center"></i>
@@ -742,8 +760,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
