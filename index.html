@@ -82,7 +82,7 @@
         <main class="max-w-4xl mx-auto px-4 py-8">
             <h2 class="text-center font-bold text-gray-800 mb-6">気になる項目を選んでください</h2>
             
-            <!-- 追加されたボタンエリア -->
+            <!-- Connection check -->
             <div class="grid grid-cols-1 sm:grid-cols-1 gap-3 mb-8">
                 <a href="https://network.mobile.rakuten.co.jp/area/?l-id=top_area-top_tokyo_pitari&s-id=top_area-top_tokyo_all" target="_blank" class="flex items-center justify-center gap-2 bg-white border-2 border-blue-400 text-blue-600 py-3 rounded-xl font-bold text-sm shadow-sm hover:bg-blue-50 transition-colors">
                     <i class="fas fa-map-marker-alt"></i>
@@ -106,8 +106,8 @@
                     </div>
                 </div>
 
-                <!-- Top Page (Campaign Button) -->
-    <div id="top-page" class="page active max-w-md mx-auto sm:col-span-2">
+          <!-- Referral Campaign -->
+    <div id="referral-page" class="page max-w-md mx-auto sm:col-span-2 space-y-4">
         <div onclick="showCampaignPage()" class="bg-pink-50 border border-pink-200 p-4 rounded-2xl flex items-center justify-between hover:bg-pink-100 transition-all cursor-pointer shadow-sm">
             <div class="flex items-center gap-3">
                 <div class="bg-white p-2 rounded-full shadow-sm referral-float flex items-center justify-center w-10 h-10">
@@ -176,26 +176,13 @@
                     <div class="flex-shrink-0 w-6 h-6 bg-pink-500 text-white rounded-full flex items-center justify-center text-xs font-bold z-10">3</div>
                     <div>
                         <p class="text-[12px] font-bold text-gray-700 leading-relaxed">
-                            エントリー完了後は、サイトからのオンライン契約、楽天モバイルショップでの店頭契約のいずれもキャンペーンポイント獲得の適用対象になります。
+                            エントリー完了後は、サイトからのオンライン契約、楽天モバイルショップでの店頭契約のいずれもキャンペーンポイント獲得の適用対象になります
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <script>
-        function showCampaignPage() {
-            document.getElementById('top-page').classList.remove('active');
-            document.getElementById('campaign-page').classList.add('active');
-            window.scrollTo(0, 0);
-        }
-
-        function showTopPage() {
-            document.getElementById('campaign-page').classList.remove('active');
-            document.getElementById('top-page').classList.add('active');
-        }
-    </script>
 
 
                 <div onclick="showPage('p1')" class="bg-white p-5 rounded-2xl border border-pink-50 card-shadow cursor-pointer hover:bg-pink-50 transition-colors">
@@ -756,6 +743,7 @@
     </script>
 </body>
 </html>
+
 
 
 
