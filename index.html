@@ -64,7 +64,7 @@
                 <div class="w-8 h-8 bg-[#e6006e] rounded-full flex items-center justify-center text-white">
                     <i class="fas fa-rocket"></i>
                 </div>
-                <span class="font-bold text-lg tracking-tight">ラク得！スタートガイド</span>
+                <span class="font-bold text-lg tracking-tight">ラク得！楽天モバイルスタートガイド</span>
             </div>
             <button class="text-gray-400 p-2" onclick="showPage('top')">
                 <i class="fas fa-home text-xl"></i>
@@ -86,7 +86,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-1 gap-3 mb-8">
                 <a href="https://network.mobile.rakuten.co.jp/area/?l-id=top_area-top_tokyo_pitari&s-id=top_area-top_tokyo_all" target="_blank" class="flex items-center justify-center gap-2 bg-white border-2 border-blue-400 text-blue-600 py-3 rounded-xl font-bold text-sm shadow-sm hover:bg-blue-50 transition-colors">
                     <i class="fas fa-map-marker-alt"></i>
-                    住所・建物名で通信をチェック！
+                    お家や職場でつながるかをチェック！
                 </a>
             </div>
 
@@ -106,20 +106,20 @@
                     </div>
                 </div>
 
-                <!-- Referral Campaign Button (Top) -->
+                <!-- Referral Campaign Button (Top) - Modified per request -->
                 <div class="sm:col-span-2 space-y-2">
-                    <a href="https://r10.to/h83Em3?openExternalBrowser=1" target="_blank" class="bg-pink-50 border border-pink-200 p-4 rounded-2xl flex items-center justify-between hover:bg-pink-100 transition-colors">
+                    <div onclick="showPage('campaign')" class="bg-pink-50 border border-pink-200 p-4 rounded-2xl flex items-center justify-between hover:bg-pink-100 transition-colors cursor-pointer">
                         <div class="flex items-center gap-3">
                             <div class="bg-white p-2 rounded-full shadow-sm referral-float">
                                 <i class="fas fa-gift text-pink-500 text-xl"></i>
                             </div>
                             <div>
                                 <span class="block text-[10px] text-pink-500 font-bold leading-none mb-1">期間限定キャンペーン実施中</span>
-                                <span class="text-sm font-black text-gray-800">紹介キャンペーンに楽天IDでログインして参加！</span>
+                                <span class="text-sm font-black text-gray-800">紹介キャンペーンに楽天IDでログインしてエントリー！</span>
                             </div>
                         </div>
-                        <i class="fas fa-external-link-alt text-pink-300 text-sm"></i>
-                    </a>
+                        <i class="fas fa-chevron-right text-pink-300 text-sm"></i>
+                    </div>
                     <div class="px-2">
                         <p class="text-[11px] font-bold text-[#e6006e] leading-snug">
                             お乗り換えで14,000ポイント、新規ご契約で11,000ポイントプレゼント！
@@ -408,7 +408,7 @@
                             <i class="fas fa-clock text-blue-500 mt-1"></i>
                             <div>
                                 <p class="text-sm font-bold">使用時間の制限</p>
-                                <p class="text-[11px] text-gray-500">スマホを使える時間帯や時間をアプリごとに設定できます。</p>
+                                <p class="text-[11px] text-gray-500">スマホを使える時間帯や時間をサイトやアプリごとに設定できます。</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3 bg-white p-3 rounded-lg shadow-sm">
@@ -668,3 +668,4 @@
     </script>
 </body>
 </html>
+
