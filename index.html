@@ -106,29 +106,97 @@
                     </div>
                 </div>
 
-                <!-- Referral Campaign Button (Top) - Modified per request -->
-                <div class="sm:col-span-2 space-y-2">
-                    <div onclick="showPage('campaign')" class="bg-pink-50 border border-pink-200 p-4 rounded-2xl flex items-center justify-between hover:bg-pink-100 transition-colors cursor-pointer">
-                        <div class="flex items-center gap-3">
-                            <div class="bg-white p-2 rounded-full shadow-sm referral-float">
-                                <i class="fas fa-gift text-pink-500 text-xl"></i>
-                            </div>
-                            <div>
-                                <span class="block text-[10px] text-pink-500 font-bold leading-none mb-1">期間限定キャンペーン実施中</span>
-                                <span class="text-sm font-black text-gray-800">紹介キャンペーンに楽天IDでログインしてエントリー！</span>
-                            </div>
-                        </div>
-                        <i class="fas fa-chevron-right text-pink-300 text-sm"></i>
-                    </div>
-                    <div class="px-2">
-                        <p class="text-[11px] font-bold text-[#e6006e] leading-snug">
-                            お乗り換えで14,000ポイント、新規ご契約で11,000ポイントプレゼント！
+                <!-- Top Page (Campaign Button) -->
+    <div id="top-page" class="page active max-w-md mx-auto sm:col-span-2">
+        <div onclick="showCampaignPage()" class="bg-pink-50 border border-pink-200 p-4 rounded-2xl flex items-center justify-between hover:bg-pink-100 transition-all cursor-pointer shadow-sm">
+            <div class="flex items-center gap-3">
+                <div class="bg-white p-2 rounded-full shadow-sm referral-float flex items-center justify-center w-10 h-10">
+                    <i class="fas fa-gift text-pink-500 text-xl"></i>
+                </div>
+                <div>
+                    <span class="block text-[10px] text-pink-500 font-bold leading-none mb-1">期間限定キャンペーン実施中</span>
+                    <span class="text-sm font-black text-gray-800">紹介キャンペーンの詳細を確認する</span>
+                </div>
+            </div>
+            <i class="fas fa-chevron-right text-pink-300 text-sm"></i>
+        </div>
+    </div>
+
+    <!-- Campaign Details Page -->
+    <div id="campaign-page" class="page max-w-md mx-auto sm:col-span-2 space-y-4">
+        <!-- Back Button -->
+        <button onclick="showTopPage()" class="text-xs font-bold text-gray-500 mb-2 flex items-center gap-1">
+            <i class="fas fa-chevron-left"></i> 戻る
+        </button>
+
+        <!-- Points Info -->
+        <div class="bg-[#fdf2f7] border-l-4 border-[#e6006e] p-4 rounded-r-xl">
+            <p class="text-[13px] font-black text-[#e6006e] leading-snug">
+                お乗り換えで14,000ポイント、<br>新規ご契約で11,000ポイントプレゼント！
+            </p>
+        </div>
+
+        <!-- Entry Link Button -->
+        <a href="https://r10.to/h83Em3?openExternalBrowser=1" target="_blank" class="block w-full bg-[#e6006e] text-white text-center py-4 rounded-2xl font-black text-sm shadow-lg hover:opacity-90 transition-opacity">
+            ▼ キャンペーンのエントリーはこちら
+        </a>
+
+        <!-- Entry Steps (Moved from main page) -->
+        <div class="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
+            <h3 class="text-sm font-black text-gray-800 mb-4 flex items-center gap-2">
+                <span class="bg-pink-500 text-white p-1 rounded-md text-[10px]">CHECK</span>
+                キャンペーンエントリー方法
+            </h3>
+            
+            <div class="space-y-4 relative">
+                <!-- Step 1 -->
+                <div class="flex gap-4 relative">
+                    <div class="flex-shrink-0 w-6 h-6 bg-pink-500 text-white rounded-full flex items-center justify-center text-xs font-bold z-10">1</div>
+                    <div class="pb-1">
+                        <p class="text-[13px] font-bold text-gray-700 leading-snug">
+                            楽天IDでログインしてエントリー完了
                         </p>
-                        <p class="text-[9px] text-gray-500 mt-1">
-                            ※楽天会員にログインまたは新規登録後, 楽天モバイル紹介キャンペーンページに遷移します。
+                    </div>
+                    <div class="absolute left-3 top-6 w-[1px] h-4 bg-pink-100"></div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex gap-4 relative">
+                    <div class="flex-shrink-0 w-6 h-6 bg-pink-500 text-white rounded-full flex items-center justify-center text-xs font-bold z-10">2</div>
+                    <div class="pb-1">
+                        <p class="text-[13px] font-bold text-gray-700 leading-snug">
+                            紹介キャンペーンページに遷移します
+                        </p>
+                    </div>
+                    <div class="absolute left-3 top-6 w-[1px] h-4 bg-pink-100"></div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-6 h-6 bg-pink-500 text-white rounded-full flex items-center justify-center text-xs font-bold z-10">3</div>
+                    <div>
+                        <p class="text-[12px] font-bold text-gray-700 leading-relaxed">
+                            エントリー完了後は、サイトからのオンライン契約、楽天モバイルショップでの店頭契約のいずれもキャンペーンポイント獲得の適用対象になります。
                         </p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showCampaignPage() {
+            document.getElementById('top-page').classList.remove('active');
+            document.getElementById('campaign-page').classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+        function showTopPage() {
+            document.getElementById('campaign-page').classList.remove('active');
+            document.getElementById('top-page').classList.add('active');
+        }
+    </script>
+
 
                 <div onclick="showPage('p1')" class="bg-white p-5 rounded-2xl border border-pink-50 card-shadow cursor-pointer hover:bg-pink-50 transition-colors">
                     <div class="flex items-center gap-4">
@@ -688,5 +756,6 @@
     </script>
 </body>
 </html>
+
 
 
