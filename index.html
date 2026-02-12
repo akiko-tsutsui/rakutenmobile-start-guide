@@ -266,7 +266,7 @@
     <template id="comparison-table">
         <section class="mb-10 px-2">
             <h3 class="text-xl font-bold text-center mb-6">無制限プランの月額料金を比較</h3>
-            <div class="bg-white rounded-2xl border-2 border-gray-100 card-shadow overflow-hidden">
+            <div class="bg-white rounded-2xl border-2 border-gray-100 card-shadow overflow-hidden mb-6">
                 <div class="bg-gray-50 py-3 px-4 border-b text-center">
                     <span class="text-sm font-bold text-gray-600">データ無制限プラン比較（月額・税込）</span>
                 </div>
@@ -303,6 +303,15 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+
+            <!-- Added Image and Simulation Link -->
+            <div class="space-y-4">
+                <img src="mobile_price_competitor.jpg" alt="携帯キャリア料金プラン比較表" class="w-full rounded-xl border border-gray-200 shadow-sm">
+                
+                <a href="https://network.mobile.rakuten.co.jp/fee/simulation/" target="_blank" class="block w-full bg-white border-2 border-[#e6006e] text-[#e6006e] text-center py-4 rounded-xl font-bold shadow-sm hover:bg-pink-50 transition-colors">
+                    <i class="fas fa-calculator mr-2"></i>料金＆ポイントかんたんシミュレーション
+                </a>
             </div>
         </section>
     </template>
@@ -504,19 +513,7 @@
                 </div>
             </section>
 
-            <!-- Gmail Sub-address Section -->
-            <section class="bg-green-50 border border-green-200 p-6 rounded-2xl card-shadow">
-                <h3 class="font-bold text-green-800 mb-3 flex items-center gap-2">
-                    <i class="fas fa-envelope-open-text"></i>
-                    小さいお子様の楽天ID取得にはGmailのサブアドレスが便利
-                </h3>
-                <p class="text-sm text-green-700 leading-relaxed mb-4">
-                    Gmail でサブアドレスを利用したいときは、メール エイリアスが役立ちます。通常の Gmail のアドレスの「@」の前に「+（半角プラス）」を付けて、任意の文字列を追加するだけで、サブアドレスとして使えます。一つの Google アカウントで複数のメールアドレスを一元管理できるため、用途によってメールアドレスを使い分けたいときなどに活用するとよいでしょう。
-                </p>
-                <a href="https://www.android.com/intl/ja_jp/articles/393/" target="_blank" class="inline-flex items-center text-green-600 font-bold hover:underline text-xs">
-                    Gmailのエイリアス機能について詳しく見る <i class="fas fa-external-link-alt ml-1 scale-75"></i>
-                </a>
-            </section>
+           
             
 
             <!-- Common Procedure -->
@@ -648,8 +645,21 @@
                    class="block w-full text-center bg-blue-600 text-white py-4 rounded-xl font-bold shadow-md hover:bg-blue-700 transition-colors">
                     デュアルSIMの詳細・設定ガイド
                 </a>
+   </section>
+                 <!-- Gmail Sub-address Section -->
+            <section class="bg-green-50 border border-green-200 p-6 rounded-2xl card-shadow">
+                <h3 class="font-bold text-green-800 mb-3 flex items-center gap-2">
+                    <i class="fas fa-envelope-open-text"></i>
+                    小さいお子様の楽天ID取得にはGmailのサブアドレスが便利
+                </h3>
+                <p class="text-sm text-green-700 leading-relaxed mb-4">
+                    Gmail でサブアドレスを利用したいときは、メール エイリアスが役立ちます。通常の Gmail のアドレスの「@」の前に「+（半角プラス）」を付けて、任意の文字列を追加するだけで、サブアドレスとして使えます。一つの Google アカウントで複数のメールアドレスを一元管理できるため、用途によってメールアドレスを使い分けたいときなどに活用するとよいでしょう。
+                </p>
+                <a href="https://www.android.com/intl/ja_jp/articles/393/" target="_blank" class="inline-flex items-center text-green-600 font-bold hover:underline text-xs">
+                    Gmailのエイリアス機能について詳しく見る <i class="fas fa-external-link-alt ml-1 scale-75"></i>
+                </a>
             </section>
-
+         
             <div class="common-steps-container"></div>
 
             <div class="pt-6">
@@ -761,4 +771,5 @@
     </script>
 </body>
 </html>
+
 
